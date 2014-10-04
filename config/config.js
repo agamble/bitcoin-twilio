@@ -8,9 +8,8 @@ var config = {
     app: {
       name: 'bitcoin-twilio'
     },
-    port: 3000,
-    db: 'mongodb://localhost/bitcoin-twilio-development'
-    
+    port: process.env.PORT || 3000,
+    db: 'mongodb://heroku:sqmyqnAudrYSbFTN9pYugHTCuDTTblGNMp8MuYOcA_mKj_8qPCoSeQ7OVVT6b-StXoNqAEoNlHw0ZO6fEtsedA@linus.mongohq.com:10024/app30372159'
   },
 
   test: {
@@ -18,9 +17,8 @@ var config = {
     app: {
       name: 'bitcoin-twilio'
     },
-    port: 3000,
-    db: 'mongodb://localhost/bitcoin-twilio-test'
-    
+    port: process.env.PORT || 3000,
+    db: 'mongodb://heroku:sqmyqnAudrYSbFTN9pYugHTCuDTTblGNMp8MuYOcA_mKj_8qPCoSeQ7OVVT6b-StXoNqAEoNlHw0ZO6fEtsedA@linus.mongohq.com:10024/app30372159'
   },
 
   production: {
@@ -28,9 +26,8 @@ var config = {
     app: {
       name: 'bitcoin-twilio'
     },
-    port: 3000,
-    db: 'mongodb://localhost/bitcoin-twilio-production'
-    
+    port: process.env.PORT || 3000,
+    db: 'mongodb://heroku:sqmyqnAudrYSbFTN9pYugHTCuDTTblGNMp8MuYOcA_mKj_8qPCoSeQ7OVVT6b-StXoNqAEoNlHw0ZO6fEtsedA@linus.mongohq.com:10024/app30372159'
   }
 };
 

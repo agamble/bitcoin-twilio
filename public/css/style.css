@@ -1,0 +1,41 @@
+.container {
+  margin: 0 auto;
+  width: 80%;
+  max-width: 1000px;
+}
+
+#phone_input {
+  width: 80%;
+  margin: 0 auto;
+  height: 50pt;
+  font-size: 40pt;
+  font-family: Whitney, sans-serif;
+  display: block;
+}
+
+#phone_submit {
+  clear: both;
+  margin: 20px auto;
+  display: block;
+  height: 40px;
+  width: 80px;
+  border: none;
+
+}
+
+.center {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#pub_key {
+  font-size: 20pt;
+  margin: 150px auto;
+  margin-bottom: 50px;
+}
+
+#qr {
+}
+
+
