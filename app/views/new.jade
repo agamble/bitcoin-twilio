@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  .container
+    h1 bitcoin-twilio
+    form(method='POST', action='/new')
+      input#phone_input(type='text' name='phone_number', default='phone number')
+      input#phone_submit(type='submit', value='Send')
