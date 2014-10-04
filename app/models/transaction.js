@@ -10,15 +10,22 @@ db.once('open', function callback () {
 var transactionSchema = mongoose.Schema({
 	inputs: [{ // outputs of prev transaction
 		address: String
-	}]
+	}],
 	outputs: [{
-		address: String,
+		address: String
 		//need to check if output matches a user 
-	}]
+	}],
 	transactionHash: String
 });
 
 var Transaction = mongoose.model('Transaction', transactionSchema);
+
+var testTra = new Transaction({
+	inputs: ['12345', '123456', '1234567'],
+	outputs: ['12345', '123456', '1234567'],
+	transactionHash: '3122387948'});
+
+console.log(testTra);
 
 
 //when blockchain sends an event where the output = one of our inputs... create a new transaction
