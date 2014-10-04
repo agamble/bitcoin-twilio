@@ -10,7 +10,6 @@ var config = {
     },
     port: 3000,
     db: 'mongodb://localhost/bitcoin-twilio-development'
-    
   },
 
   test: {
@@ -20,7 +19,6 @@ var config = {
     },
     port: 3000,
     db: 'mongodb://localhost/bitcoin-twilio-test'
-    
   },
 
   production: {
@@ -30,7 +28,6 @@ var config = {
     },
     port: 3000,
     db: 'mongodb://localhost/bitcoin-twilio-production'
-    
   }
 };
 
