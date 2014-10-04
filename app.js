@@ -3,6 +3,13 @@ var express = require('express'),
   glob = require('glob'),
   mongoose = require('mongoose');
 
+  var Transaction,User;
+exports.configure =function(){
+  var mongoose = require('mongoose');
+  Transaction = mongoose.model("Transaction");
+  User = mongoose.model("User");
+}
+
 mongoose.connect(config.db);
 var db = mongoose.connection;
 db.on('error', function () {
