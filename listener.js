@@ -24,7 +24,7 @@ ws.on('message', function(data, flags){
 
 	var queryResult;
 
-	Transaction.findOne({wallet: {outputs:{address: addr}}}, function(err, transaction) {
+	User.findOne({wallet: {outputs:{pubKey: addr}}}, function(err, transaction) {
 		if (err){
 			return console.error(err);
 		}
