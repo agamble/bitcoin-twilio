@@ -10,13 +10,13 @@ module.exports = function (app) {
 
 router.post('/twilio/text', function(req, res, next){
   console.log(req.body);
-//+447929032685
-  if (req.body.From == '+447526983035') {
+//
+  if (req.body.From == '+447929032685') {
     var d = new Date();
     client.sms.messages.create({
 
       //For an "update", "create", "post", or "put" request these properties are form-encoded and sent to Twilio:
-      to:'+447526983035',
+      to:'+447929032685',
       from:'+442033897508',
       body:'Hey Jayna!! It\'s alex!! the time is exactly ' + d.toUTCString()
     }, function(err, responseData) { //this function is executed when a response is received from Twilio
